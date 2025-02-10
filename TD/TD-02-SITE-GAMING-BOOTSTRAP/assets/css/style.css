@@ -26,3 +26,25 @@
     object-fit: cover; /* Coupe l'image sans distorsion */
     border-radius: 10px; /* Arrondi les coins */
 }
+
+.banner {
+    position: relative;
+    z-index: 10;
+    background-image: url('../img/ahmed.jpg'); /* Chemin vers votre image */
+    background-size: cover; /* Pour couvrir toute la bannière */
+    background-position: center; /* Pour centrer l'image */
+}
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Assombrit l'image pour améliorer la lisibilité du texte*/
+}
+
+.banner div {
+    position: relative;
+    z-index: 1;
+}
