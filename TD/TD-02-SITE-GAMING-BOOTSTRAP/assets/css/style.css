@@ -1,5 +1,28 @@
-/* Effet hover : agrandir l'image légèrement */
+
+.carousel-container {
+    width: 60%; /* Ajuste la largeur selon ton besoin */
+    max-width: 800px; /* Évite que le carousel devienne trop grand */
+    margin: 20px auto; /* Centre le carousel */
+    border-radius: 10px; /* Effet arrondi */
+    overflow: hidden; /* Empêche les images de dépasser */
+}
+
+.carousel-item img {
+    width: 100%; /* S'assure que l'image occupe tout le conteneur */
+    height: 200px; /* Ajuste la hauteur */
+    object-fit: cover; /* Garde le ratio et évite les déformations */
+    border-radius: 10px; /* Ajoute un effet arrondi */
+}
+
 .img-hover:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
+}
+
+/* Taille uniforme des images */
+.fixed-size {
+    width: 150px; /* Largeur fixe */
+    height: 150px; /* Hauteur fixe */
+    object-fit: cover; /* Coupe l'image sans distorsion */
+    border-radius: 10px; /* Arrondi les coins */
 }
