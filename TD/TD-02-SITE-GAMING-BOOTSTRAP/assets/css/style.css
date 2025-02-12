@@ -176,3 +176,6 @@ input, textarea, select {
     color: #FFD700 !important;
 }
 
+footer .social-icons i {
+    color: #D4AF37; 
+  }
